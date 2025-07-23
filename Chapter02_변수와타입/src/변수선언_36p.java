@@ -206,6 +206,6 @@ public class 변수선언_36p {
 		final int ABC = 100;
 		System.out.println(Integer.MAX_VALUE); 
 		
-	}S
+	}
 
 }
