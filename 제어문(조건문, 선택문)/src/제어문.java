@@ -34,14 +34,26 @@
  * 					=> 화면 출력
  * 		반복제어문 : break : 종료
  * 
+ * 		
+ * 
  */
 
-
+import java.util.Scanner;
 public class 제어문 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner scan = new Scanner(System.in);
+		System.out.println("정수 입력 : ");
+		int num = scan.nextInt();
+		
+		if(num%2 == 0) {
+			System.out.println(num + " = 짝수다");
+				
+		}
+		if(num%2 == 1){
+			System.out.println(num + " = 홀수다");
+			
+		}
 	}
 
 }
