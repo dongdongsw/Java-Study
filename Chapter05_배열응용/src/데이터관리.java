@@ -130,7 +130,7 @@ public class 데이터관리 extends JFrame implements ActionListener{
 		
 	}
 	@Override
-	public void actionPerformed(ActionEvent e) {
+	public void actionPerformed(ActionEvent e) { //버튼 클릭하는 추상메서드 조율은 개발자가 한다 => 추상메서드를 인용하는 것은 인스턴스
 		if(e.getSource() == btn || e.getSource() == tf) { //btn 버튼클릭시, 엔터 버튼 클릭시 검색
 			String cate = (String)box.getSelectedItem();
 //			System.out.println(cate);
