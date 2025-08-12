@@ -1,0 +1,111 @@
+package com.sist.main;
+
+import jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput;
+
+/*
+ * 		패키지를 만드는 방법
+ * 			ㄴ com(org).업체명.요약
+ * 			ㄴ java.util.* : 유용하게 사용되는 라이브러리
+ * 			ㄴ java.io.* : 입출력
+ * 			ㄴ java.net.* : 네트워크
+ * 			ㄴ javax.swing.* : 윈도우 => 경량 => 1.2
+ * 			ㄴ java.awt.* : 윈도우 => 1.0
+ * --------------------------------------------------------
+ * 			client 	com.sist.client
+ * 					---------------------화면 UI
+ * 					com.sist.commons
+ * 					---------------------서버와 공통 사용
+ * 					com.sist.server
+ * 					com.sist.board
+ * 						ㄴ 소문자만 사용
+ * 						ㄴ 키워드는 사용금지
+ * 						ㄴ 공백은 사용할 수 없다
+ * 				ㄴ 관련된 클래스를 모아서 관리 => 폴더
+ * 				ㄴ 재사용
+ * 				ㄴ 잘 만든 클래스 => .jar
+ * 				ㄴ 클래스 => 여러개 묶는다 => 패키지 => 패키지 여러개 => 프로젝트
+ * 					변수 => 배열 / 클래스
+ * 					메소드 => 명령문		
+ * 					-------------------클래스 --> 클래스 여러개 => 패키지 => 패키지 여러개 => 라이브러리
+ * 			
+ * 				ㄴ 클래스가 다른 폴더(패키지)에 존재
+ * 					ㄴ 반드시 import를 이용해서 클래스를 가지고 온다.
+ * 					ㄴ 클래스가 public이 아니면 사용 불가
+ * 					ㄴ 메소드 / 생성자 => public이 아니면 사용이 불가능
+ * 					ㄴ 변수 => 캡슐화 private 
+ * 							  -----------------기능 : 읽기 / 쓰기
+ * 
+ * 				ㄴ 접근 범위 (클래스 / 메소드 / 변수)
+ * 				--------------------------------
+ * 				접근 지정어
+ * 				private : 자신의 클래스에서만 사용이가능
+ * 						  인스턴스 변수
+ * 				default : 같은 패키지에서만 접근이 가능
+ * 				protected : 같은 패키지에서만 접근이 가능, 상속시에 상속받은 클래스
+ * 				public : 패키지 상관 없이 모든 클래스에서 접근이 가능
+ * 
+ * 			-------------------------------------------------------------------
+ * 				상수 ===> public static final
+ * 				변수 ===> private
+ * 							ㄴ 지역변수는 final만 사용이 가능
+ * 				메소드 ===> 다른 클래스와 연결 : public
+ * 				생성자 ===> 메소드 / 변수 사용시 메모리 저장 => 다른 클래스에서 사용이 가능 : public
+ * 				클래스 ===> 다른 클래스에서 사용이 가능 : public
+ * 
+ * 				this ==> 객체
+ * 				this() ==> 생성자
+ *
+ */
+class Sawon{
+	private int sabun;
+	protected String name;
+	String job;
+	public String address; 
+	
+	public Sawon(int sabun,  String name,String job, String address){
+//		지역변tn 우선 순위(지역변수, 매개변수)
+		this.sabun = sabun;
+		this.name = name;
+		this.job = job;
+		this.address = address;
+		System.out.println("직위 :" + this String[]);
+
+	}
+}
+
+public class 접근지정어 {
+
+	saws, hong new 
+	
+	
+	public static void main(String[] args) {
+		
+//			Sawon hong = new Sawon(1, "홍길동" , "대리", "서울");
+			System.out.println("직위 :" + hong);
+
+				/*
+				 * this : 클래스 자신의 객체
+				 * 	ㄴ hong 객체와 동일
+				 * 
+				 * 1. 생성
+				 * 		ㄴ Sawon hong = new Sawon()
+				 * 2. JVM 
+				 * 		ㄴ this = hong
+				 * 
+				 * => this는 인스턴스 메소드나 생성자 사용이 가능
+				 * 		static에는 존재하지 않는다  
+				 * 
+				 */
+			System.out.println("======정보=====");
+			System.out.println("사번 :" + hong.getSabun());
+			System.out.println("이름 :" + hong.name);
+			System.out.println("직위 :" + hong.job);
+			System.out.println("주소 :" + hong.address);
+
+			Sawon shim = new Sawon(2, "심청이" , "대리", "서울");
+			System Outputprinttl
+
+			
+	}
+
+}
