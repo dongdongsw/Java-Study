@@ -56,8 +56,12 @@
  * 
  * 
  */
-import java.util.*;
 
+//import java.util.*;
+//class A{
+//	int a;
+//	void aaa() {}
+//}
 
 public class 정리_2 {
 	
@@ -69,13 +73,14 @@ public class 정리_2 {
 //		정리_2 a = new 정리_2();
 //		정리_2 b = (정리_2)a.clone();
 
-
-		List<A> list = new ArrayList<A>();
-		list.add(new A());
-		list.add(new A());
-		list.add(new A());
-		
-		A aa = list.get(0);
+//
+//		List<A> list = new ArrayList<A>();
+//		list.add(new A());
+//		list.add(new A());
+//		list.add(new A());
+//		
+//		A aa = list.get(0);
+//	
 	}
 
 }

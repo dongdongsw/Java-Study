@@ -1,6 +1,5 @@
 package com.sist.main;
 
-import jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput;
 
 /*
  * 		패키지를 만드는 방법
@@ -63,24 +62,29 @@ class Sawon{
 	public String address; 
 	
 	public Sawon(int sabun,  String name,String job, String address){
-//		지역변tn 우선 순위(지역변수, 매개변수)
+//		지역변수 우선 순위(지역변수, 매개변수)
 		this.sabun = sabun;
 		this.name = name;
 		this.job = job;
 		this.address = address;
-		System.out.println("직위 :" + this String[]);
+		System.out.println("직위 :" + this);
 
+	}
+	public int getSabun() {
+		return sabun;
+	}
+	public void setSabun(int sabun) {
+		this.sabun = sabun;
+		
 	}
 }
 
 public class 접근지정어 {
-
-	saws, hong new 
 	
 	
 	public static void main(String[] args) {
 		
-//			Sawon hong = new Sawon(1, "홍길동" , "대리", "서울");
+			Sawon hong = new Sawon(1, "홍길동" , "대리", "서울");
 			System.out.println("직위 :" + hong);
 
 				/*
@@ -103,7 +107,7 @@ public class 접근지정어 {
 			System.out.println("주소 :" + hong.address);
 
 			Sawon shim = new Sawon(2, "심청이" , "대리", "서울");
-			System Outputprinttl
+	        System.out.println("shim="+shim);
 
 			
 	}

@@ -220,7 +220,7 @@ class Car{
 //		model = m;
 //		color = "검정색";
 //		maxSpeed =300; 
-		this(m,"검정색", 300)
+		this(m,"검정색", 300);
 	}
 	Car(String m,String c){
 //		model = m;
@@ -238,18 +238,22 @@ class Car{
 public class 객체지향용어_1 {
 
 	public static void main(String[] args) {
-
-		Student std = new Student(5);
-		System.out.println("std.hakbun = " + std.hakbun);
-		System.out.println("std.name = " + std.name);
-
-		Student std1 = new Student("심청이");
-		System.out.println("std.hakbun = " + std1.hakbun);
-		System.out.println("std.name = " + std1.name);
 		
-		Student std2 = new Student(7,"이순신");
+		Student std=new Student();
+	    System.out.println("std.hakbun="+std.hakbun);//1
+	    System.out.println("std.name="+std.name);//홍길동
+
+		Student std2 = new Student(5);
 		System.out.println("std.hakbun = " + std2.hakbun);
 		System.out.println("std.name = " + std2.name);
+
+		Student std3 = new Student("심청이");
+		System.out.println("std.hakbun = " + std3.hakbun);
+		System.out.println("std.name = " + std3.name);
+		
+		Student std4 = new Student(7,"이순신");
+		System.out.println("std.hakbun = " + std4.hakbun);
+		System.out.println("std.name = " + std.name);
 		
 		Car c1 = new Car("현대자동차");
 		System.out.println("c1.model = " + c1.model);

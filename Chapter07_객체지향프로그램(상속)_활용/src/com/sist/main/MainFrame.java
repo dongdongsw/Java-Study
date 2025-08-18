@@ -61,7 +61,7 @@ public class MainFrame extends JFrame implements ItemListener{
 	public void itemStateChanged(ItemEvent e) {
 		if(e.getSource() == box) {
 			int index = box.getSelectedIndex();
-			Image img = Commons.getImage(new ImageIcon("c:\\javaDev\\m"+ (index + 1)+".jpg",800,430);
+			Image img = Commons.getImage(new ImageIcon("c:\\javaDev\\m"+ (index + 1)+".jpg"),800,430);
 			la.setIcon(new ImageIcon(img));
 		}
 		

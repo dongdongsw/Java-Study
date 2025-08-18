@@ -34,6 +34,11 @@ public class MainClass {
 			sal = rs.getInt(4);
 			deptno = rs.getInt(5);
 		}
+		System.out.println("사번:"+empno);
+        System.out.println("이름:"+ename);
+        System.out.println("직위:"+job);
+        System.out.println("급여:"+sal);
+        System.out.println("부서번호:"+deptno);
 		
 	}
 

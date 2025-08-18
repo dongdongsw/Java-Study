@@ -4,7 +4,7 @@ public class Board1impl implements Board1{
 
 	
 	@Override
-	public void sayHello2() {
+	public void sayHello() {
 		System.out.println("Hello World");
 	}
 }
