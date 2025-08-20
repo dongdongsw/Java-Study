@@ -90,18 +90,18 @@ package com.sist.main;
  */
 class A{
 	int a =100;
-	public A() { //얘는 자동으로 실행됨 (암묵적으로)
+	public A(String name,int a) { //얘는 자동으로 실행됨 (암묵적으로)
 		System.out.println("상위 클래스 생성자 호출!!");	//이게 먼저 호출됨
 	}
 //	public A(String name, int a) { //얘는 자동으로 실행됨 (암묵적으로)
 //		System.out.println("상위 클래스 생성자 호출!!");	//이게 먼저 호출됨
 //	}
-//}
+}
 
 class B extends A{
 //	int a =200; //이걸 주석하면 this.a는 100이 됨 // 변수 오버라이딩
 	public B() {
-//		super("홍길동",10);
+		super("홍길동",10);
 		System.out.println("this.a =" + this.a);
 		System.out.println("super.a =" + super.a);
 	}

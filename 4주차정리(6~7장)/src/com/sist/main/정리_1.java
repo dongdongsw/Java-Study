@@ -152,7 +152,10 @@ package com.sist.main;
  * 								ㄴ 3. 매개변수가 동일
  * 								ㄴ 4. 리턴형이 동일
  * 								ㄴ 5. 접근 지정어는 확대는 가능 축소는 불가능하다
- * 									private / protect / public
+ * 									private < default < protected < public 
+ * 
+ *  								void display() 
+ *                     				ㄴ protected void display()
  * 									ㄴ public void display()
  * 									ㄴ void display()
  * 									ㄴ private void display() x
@@ -176,35 +179,65 @@ package com.sist.main;
  */
 class Board{
 	public void list() {
+		
 		System.out.println("자유게시판 출력!!");
+	
 	}
+	
 	//다운로드
 	public void detail(int no) {
-		System.out.println("다운로드 기능 추가");	
+		
+//		System.out.println("다운로드 기능 추가");	
 		System.out.println(no + "번째 게시물 상세보기 출력");
+	
 	}
+	
 	//업로드
 	void insert() {
-		System.out.println("업로드 기능 추가");	
+		
+//		System.out.println("업로드 기능 추가");	
 		System.out.println("새로운 게시물 추가!!");
+	
 	}
 }
 
 class DataBoard extends Board{
-	
+	public void detail(int no)
+	{
+		
+		System.out.println("다운로드 기능 추가");
+		System.out.println(no+"번째 게시물 상세보기 출력");
+		
+	}
+	public void insert()
+	{
+		
+		System.out.println("업로드 기능 추가");
+		System.out.println("새로운 게시물 추가!!");
+		
+	}
 }
 
-class Reply extends insert{
-	
-	public void comm(){
-		System.out.println("다운로드 기능 추가");
+class ReplyBoard extends Board
+{
+	public void insert()
+	{
+		
+		System.out.println("댓글 추가");
+		System.out.println("새로운 게시물 추가!!");
+		
 	}
-	
-	public void list() {
-		System.out.println("답변 추가해서 출력!!");
+	public void list()
+	{
+		
+		System.out.println("답변 추가해서 출력 !!");
+		
 	}
-	public void reply() {
+	public void reply()
+	{
+		
 		System.out.println("댓글 올리기...");
+		
 	}
 }
 public class 정리_1 {
